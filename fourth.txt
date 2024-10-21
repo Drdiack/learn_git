@@ -1,0 +1,230 @@
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git unit
+git: 'unit' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git config -- global user.name"Drdiack"
+error: key does not contain a section: global
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git config --global user.name "DrDiack"
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git config --global user.email"diackmamadou783@gmail.com"
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git init
+Initialized empty Git repository in C:/Users/user/Documents/Formation Gomycode/l
+earn_git/.git/
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git commit -m "first commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        third.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git add .
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git commit -m "first commit"
+[master (root-commit) 446b796] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git commit -m "first commit"
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        fourth.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git add .
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git commit -m "first commit"
+[master 28adcd5] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git add .
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git commit -m "suppression du fichier "
+[master 00770ce] suppression du fichier
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git log
+commit 00770ce50130ae44a6bba7292e67935cc135f40e (HEAD -> master)
+Author: DrDiack <diackmamadou783@gmail.com>
+Date:   Mon Oct 21 19:58:09 2024 +0000
+
+    suppression du fichier
+
+commit 28adcd5989cdec2dbe45fb2c8d1961f958dc6271
+Author: DrDiack <diackmamadou783@gmail.com>
+Date:   Mon Oct 21 19:50:27 2024 +0000
+
+    first commit
+
+commit 446b7962770f73e284acb1c1636e5dabdb1c1ed4
+Author: DrDiack <diackmamadou783@gmail.com>
+Date:   Mon Oct 21 19:46:05 2024 +0000
+
+    first commit
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git config ^C
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git config --global core.pager "cat"
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git log
+commit 00770ce50130ae44a6bba7292e67935cc135f40e (HEAD -> master)
+Author: DrDiack <diackmamadou783@gmail.com>
+Date:   Mon Oct 21 19:58:09 2024 +0000
+
+    suppression du fichier
+
+commit 28adcd5989cdec2dbe45fb2c8d1961f958dc6271
+Author: DrDiack <diackmamadou783@gmail.com>
+Date:   Mon Oct 21 19:50:27 2024 +0000
+
+    first commit
+
+commit 446b7962770f73e284acb1c1636e5dabdb1c1ed4
+Author: DrDiack <diackmamadou783@gmail.com>
+Date:   Mon Oct 21 19:46:05 2024 +0000
+
+    first commit
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git config -- list
+error: key does not contain a section: list
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=DrDiack
+user.email=diackmamadou783@gmail.com
+core.pager=cat
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git config --global
+error: no action specified
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git remote add origin https : //github.com/Drdiack/learn_git.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git remote add  origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git remote add origin https://github.com/Drdiack/learn_git.git
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (7/7), 635 bytes | 211.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Drdiack/learn_git.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$ ^C
+
+user@DESKTOP-0JFP5PV MINGW64 ~/Documents/Formation Gomycode/learn_git (master)
+$
